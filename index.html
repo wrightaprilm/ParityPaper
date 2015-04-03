@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Paritypaper by wrightaprilm</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Paritypaper</h1>
+        <p>Final files related to parity paper.</p>
+
+        <p class="view"><a href="https://github.com/wrightaprilm/ParityPaper">View the Project on GitHub <small>wrightaprilm/ParityPaper</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/wrightaprilm/ParityPaper/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/wrightaprilm/ParityPaper/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/wrightaprilm/ParityPaper">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a id="paritypaper" class="anchor" href="#paritypaper" aria-hidden="true"><span class="octicon octicon-link"></span></a>ParityPaper</h1>
+
+<p>Final files related to parity paper</p>
+
+<p>Contents</p>
+
+<p>Directory: Data
+Contains: Original Pyron and Burbrink dataset and the heatmap data used to make Figure 4.</p>
+
+<p>Directory: Exploratory Notebooks
+Contains: Scripts used at various points in exploratory data analyses. Graphically front-ended via the iPython notebook for exploration. </p>
+
+<p>Directory: PAUPExampleFile
+Contains: Sample of PAUP file used in Analyses to generate Table 2.</p>
+
+<p>Directory: Scripts
+Contains: Analysis scripts used for paper. Heatmap_data_gen.R performs the model-fitting used to generate Figure 4. Heatmap.py actually makes the heatmap shown on figure four from the raw data output by Heatmap_data_gen.R. Bisse.R is used to run the 
+BiSSE analysis described in methods, with results shown on Figures 3 and 5. </p>
+
+<p>Directory: TreePL
+Contains: Configuration file for TreePL dating.</p>
+
+<p>Directory: Trees
+Contains: Three sets of trees: raw, uncalibrated trees, calibrated trees and trees with BiSSE states annotated to them. Raw and time-scaled trees each contain four trees, as described in the methods section. BiSSE-Annotated contains twelve trees: each of the four trees having been run with three parameter configurations in BiSSE.</p>
+
+<p>Makefiles: Makefiles reproduce the analyses completed. Makefile will run the BiSSE model-fitting to each of the four time-scaled trees with each of the 3 parameter settings (correcting for sampling bias). This will run a while. Makefileheat will reproduce the heatmap data. This will run for a long while. We have also included a Dockerfile contributed by Kyle R. Kelley (<a href="mailto:rgbkrk@gmail.com">rgbkrk@gmail.com</a>) that reproduces the R language setup needed to run our code.</p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/wrightaprilm">wrightaprilm</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
