@@ -1,0 +1,22 @@
+Contents
+
+Directory: Data
+Contains: Original Pyron and Burbrink dataset and the heatmap data used to make Figure 4.
+
+Directory: Exploratory Notebooks
+Contains: Scripts used at various points in exploratory data analyses. Graphically front-ended via the iPython notebook for exploration. 
+
+Directory: PAUPExampleFile
+Contains: Sample of PAUP file used in Analyses to generate Table 2.
+
+Directory: Scripts
+Contains: Analysis scripts used for paper. Heatmap_data_gen.R performs the model-fitting used to generate Figure 4. Heatmap.py actually makes the heatmap shown on figure four from the raw data output by Heatmap_data_gen.R. Bisse.R is used to run the 
+BiSSE analysis described in methods, with results shown on Figures 3 and 5. 
+
+Directory: TreePL
+Contains: Configuration file for TreePL dating.
+
+Directory: Trees
+Contains: Three sets of trees: raw, uncalibrated trees, calibrated trees and trees with BiSSE states annotated to them. Raw and time-scaled trees each contain four trees, as described in the methods section. BiSSE-Annotated contains twelve trees: each of the four trees having been run with three parameter configurations in BiSSE.
+
+Makefiles: Makefiles reproduce the analyses completed. Makefile will run the BiSSE model-fitting to each of the four time-scaled trees with each of the 3 parameter settings (correcting for sampling bias). This will run a while. Makefileheat will reproduce the heatmap data. This will run for a long while. We have also included a Dockerfile contributed by Kyle R. Kelley (rgbkrk@gmail.com) that reproduces the R language setup needed to run our code.

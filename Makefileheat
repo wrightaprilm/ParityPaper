@@ -1,0 +1,16 @@
+all : heatmap_examl heatmap_bl heatmap_total heatmap_pb
+
+heatmap_examl: ./Trees/Time-Scaled/Examl.dated ./Scripts/heatmap_data_gen.R
+	Rscript ./Scripts/heatmap_data_gen.R ./Trees/Time-Scaled/Examl.dated
+	
+heatmap_bl: ./Trees/Branch_opt.dated ./Scripts/heatmap_data_gen.R
+	Rscript ./Scripts/heatmap_data_gen.R ./Trees/Time-Scaled/Branch_opt.dated
+
+heatmap_total: ./Trees/Best.dated ./Scripts/heatmap_data_gen.R
+	Rscript ./Scripts/heatmap_data_gen.R ./Trees/Time-Scaled/Best.dated
+
+heatmap_pb: ./Trees/PyronBurbrink2014.dated ./Scripts/heatmap_data_gen.R
+	Rscript ./Scripts/heatmap_data_gen.R ./Trees/Time-Scaled/PyronBurbrink2014.dated
+
+
+
