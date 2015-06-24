@@ -1,0 +1,50 @@
+# treePL configuration file for the 8-calibration analyses. Edit lines 1 and 46 
+# to reflect your input and output
+treefile = TREEFILE 
+smooth = 0.0001
+numsites = 12896
+mrca = skink Plestiodon_fasciatus Acontias_percivali
+mrca = gekkota Phelsuma_ornata Delma_impar
+mrca = iguania Iguana_iguana Chamaeleo_roperi
+mrca = serpentes Nerodia_rhombifer Liotyphlops_albirostris
+mrca = Anguimorpha Varanus_indicus Anniella_pulchra
+mrca = Lacertoidea Rhineura_floridana Darevskia_uzzelli 
+mrca = ROOT Sphenodon_punctatus Erythrolamprus_mimus
+mrca = squamates Eryx_jayakari Dibamus_bourreti
+
+min = ROOT 228
+max = ROOT 228
+min = squamates 174.1
+max = squamates 174.1
+min = skink 94.4
+max = skink 94.4
+min = gekkota 86.5
+max = gekkota 86.5
+min = iguania 146.4
+max = iguania 146.4
+min = serpentes 131
+max = serpentes 131
+min = Anguimorpha 118
+max = Anguimorpha 118
+min = Lacertoidea 126.6
+max = Lacertoidea 126.6
+
+opt = 5
+moredetail
+optad = 1
+optcvad = 2
+thorough
+
+[cv]
+[cvstart = .00001]
+[cvstop = 100]
+[randomcv]
+[randomcviter=100]
+[cvmultstep = 10]
+[verbose]
+[lfsimaniter = 0]
+
+plsimaniter = 500000
+outfile = OUTPUTNAME
+[cvoutfile = config_1.cv.txt]
+
