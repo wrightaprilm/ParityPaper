@@ -1,4 +1,6 @@
 # ParityPaper
+Find a blog post on the research [here](http://wrightaprilm.github.io/posts/parity-paper.html).
+
 Final files related to parity paper.
 Old repository [here](https://github.com/wrightaprilm/ParityPaper), it's very messy. These are only the files used directly to perform analyses described in the paper.
 
